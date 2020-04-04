@@ -39,14 +39,14 @@ namespace UrlExtender.Controllers
             }
             else {
                 url = url.ToLower();
+                if(!url.EndsWith("/"))
+                    url += "/";
             }
 
-            if(url.StartsWith("http://") || url.StartsWith("https://")) {
-                return url;
-            }
-            else {
-                return "http://" + url;
-            }
+            if(!(url.StartsWith("http://") || url.StartsWith("https://")))
+                url = "http://" + url;
+
+            return url;
         }
 
         [HttpGet("create")]
