@@ -1,5 +1,5 @@
 
-Copyright (c) 2020, 
+Copyright (c) Skipper1931 2020, 
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
